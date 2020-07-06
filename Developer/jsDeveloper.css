@@ -1,0 +1,19 @@
+.Emre {
+    background-color: darkcyan;
+    width: 700px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 250px;
+    box-shadow: 20px 20px 20px darkgrey;
+}
+
+.Sakin {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.respect {
+    padding-bottom: 18px;
+}
