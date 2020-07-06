@@ -66,22 +66,30 @@ logHottestDays(feh_temp_array, threshold);
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-function sum() {
-    let sumofGrades = document.getElementById("grades").value.split(",");
+function tim() {
+    sumofGrades = 0;
+    grades = document.getElementById("grades").value.split(",");
     for (i = 0; i < grades.length; i++) {
-        sumofnums += parseInt(grades[i]);
+        sumofGrades += parseInt(grades[i]);
     }
     document.getElementById("sum").innerHTML = sumofGrades;
 
     if(sumofGrades >= 90 && sumofGrades <= 100) {
         document.getElementById("som").innerHTML = "A";
-    }if(sumofGrades >= 80 && sumofGrades <= 89) {
+        document.getElementById("eremj").innerHTML =   "<img src='a.gif' />";
+    }else if(sumofGrades >= 80 && sumofGrades <= 89) {
         document.getElementById("som").innerHTML = "B";
-    }if(sumofGrades >= 70 && sumofGrades <= 79) {
+        document.getElementById("eremj").innerHTML =   "<img src='b.gif' />";
+    }else if(sumofGrades >= 70 && sumofGrades <= 79) {
         document.getElementById("som").innerHTML = "C";
-    }if(sumofGrades >= 60 && sumofGrades <= 69) {
+        document.getElementById("eremj").innerHTML =  "<img src='c.gif' />";
+    }else if(sumofGrades >= 60 && sumofGrades <= 69) {
         document.getElementById("som").innerHTML = "D";
-    }else {
+        document.getElementById("eremj").innerHTML =   "<img src='d.gif' />";
+    }else if(sumofGrades >=0 && sumofGrades < 60) {
         document.getElementById("som").innerHTML = "F";
+        document.getElementById("eremj").innerHTML =  "<img src='f.gif' />";
+    }else {
+        document.getElementById("som").innerHTML = "Wrong numbers";
     }
 }
